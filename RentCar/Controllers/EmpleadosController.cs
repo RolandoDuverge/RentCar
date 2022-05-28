@@ -12,16 +12,16 @@ namespace RentCar.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmpleadossController : ControllerBase
+    public class EmpleadosController : ControllerBase
     {
         private readonly RentCarContext _context;
 
-        public EmpleadossController(RentCarContext context)
+        public EmpleadosController(RentCarContext context)
         {
             _context = context;
         }
 
-        // GET: api/Empleadoss
+        // GET: api/Empleados
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Empleados>>> GetEmpleados()
         {
@@ -32,7 +32,7 @@ namespace RentCar.Controllers
             return await _context.Empleados.ToListAsync();
         }
 
-        // GET: api/Empleadoss/5
+        // GET: api/Empleados/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Empleados>> GetEmpleados(int id)
         {
@@ -50,7 +50,7 @@ namespace RentCar.Controllers
             return Empleados;
         }
 
-        // PUT: api/Empleadoss/5
+        // PUT: api/Empleados/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEmpleados(int id, Empleados Empleados)
@@ -81,7 +81,7 @@ namespace RentCar.Controllers
             return NoContent();
         }
 
-        // POST: api/Empleadoss
+        // POST: api/Empleados
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Empleados>> PostEmpleados(Empleados Empleados)
@@ -96,7 +96,7 @@ namespace RentCar.Controllers
             return CreatedAtAction("GetEmpleados", new { id = Empleados.Id }, Empleados);
         }
 
-        // DELETE: api/Empleadoss/5
+        // DELETE: api/Empleados/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmpleados(int id)
         {
