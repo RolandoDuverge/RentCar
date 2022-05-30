@@ -193,5 +193,10 @@ namespace RentCar_UI
         {
             CollapseMenu();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
