@@ -13,11 +13,15 @@ using System.Windows.Forms;
 
 namespace RentCar_UI
 {
-    public partial class FrmLogin : Form
+    public partial class FrmLogin : MaterialSkin.Controls.MaterialForm
     {
         public FrmLogin()
         {
             InitializeComponent();
+            MaterialSkin.MaterialSkinManager skinManager = MaterialSkin.MaterialSkinManager.Instance;
+            skinManager.AddFormToManage(this);
+            skinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
+            skinManager.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Blue900, MaterialSkin.Primary.BlueGrey900, MaterialSkin.Primary.BlueGrey500, MaterialSkin.Accent.Orange700, MaterialSkin.TextShade.WHITE);
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)

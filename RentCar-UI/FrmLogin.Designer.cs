@@ -27,56 +27,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UserBox = new System.Windows.Forms.TextBox();
-            this.LoginBtn = new System.Windows.Forms.Button();
-            this.PasswordBox = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
+            this.UserBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.PasswordBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.LoginBtn = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // UserBox
             // 
-            this.UserBox.Location = new System.Drawing.Point(268, 83);
+            this.UserBox.Depth = 0;
+            this.UserBox.Hint = "Username";
+            this.UserBox.Location = new System.Drawing.Point(362, 136);
+            this.UserBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.UserBox.Name = "UserBox";
-            this.UserBox.Size = new System.Drawing.Size(200, 23);
-            this.UserBox.TabIndex = 0;
-            // 
-            // LoginBtn
-            // 
-            this.LoginBtn.Location = new System.Drawing.Point(289, 203);
-            this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(150, 46);
-            this.LoginBtn.TabIndex = 1;
-            this.LoginBtn.Text = "Entrar";
-            this.LoginBtn.UseVisualStyleBackColor = true;
-            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
+            this.UserBox.PasswordChar = '\0';
+            this.UserBox.SelectedText = "";
+            this.UserBox.SelectionLength = 0;
+            this.UserBox.SelectionStart = 0;
+            this.UserBox.Size = new System.Drawing.Size(185, 23);
+            this.UserBox.TabIndex = 4;
+            this.UserBox.UseSystemPasswordChar = false;
             // 
             // PasswordBox
             // 
-            this.PasswordBox.Location = new System.Drawing.Point(268, 149);
+            this.PasswordBox.Depth = 0;
+            this.PasswordBox.Hint = "Password";
+            this.PasswordBox.Location = new System.Drawing.Point(362, 176);
+            this.PasswordBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.PasswordChar = '*';
-            this.PasswordBox.Size = new System.Drawing.Size(200, 23);
-            this.PasswordBox.TabIndex = 3;
+            this.PasswordBox.PasswordChar = '\0';
+            this.PasswordBox.SelectedText = "";
+            this.PasswordBox.SelectionLength = 0;
+            this.PasswordBox.SelectionStart = 0;
+            this.PasswordBox.Size = new System.Drawing.Size(185, 23);
+            this.PasswordBox.TabIndex = 5;
+            this.PasswordBox.UseSystemPasswordChar = false;
             // 
-            // LoginForm
+            // LoginBtn
+            // 
+            this.LoginBtn.Depth = 0;
+            this.LoginBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.LoginBtn.Location = new System.Drawing.Point(0, 271);
+            this.LoginBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Primary = true;
+            this.LoginBtn.Size = new System.Drawing.Size(591, 33);
+            this.LoginBtn.TabIndex = 6;
+            this.LoginBtn.Text = "LOGIN";
+            this.LoginBtn.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 73);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(309, 176);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 515);
-            this.Controls.Add(this.PasswordBox);
+            this.ClientSize = new System.Drawing.Size(591, 304);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LoginBtn);
+            this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.UserBox);
-            this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.Name = "FrmLogin";
+            this.Text = "Login RentCar";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private TextBox PasswordBox;
-        private TextBox UserBox;
-        private Button LoginBtn;
+        private MaterialSkin.Controls.MaterialSingleLineTextField UserBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField PasswordBox;
+        private MaterialSkin.Controls.MaterialRaisedButton LoginBtn;
+        private PictureBox pictureBox1;
     }
 }
