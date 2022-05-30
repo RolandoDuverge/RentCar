@@ -37,21 +37,19 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 171);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6);
+            this.dataGridView1.Location = new System.Drawing.Point(288, 126);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1441, 764);
+            this.dataGridView1.Size = new System.Drawing.Size(500, 312);
             this.dataGridView1.TabIndex = 0;
             // 
             // CrearBtn
             // 
-            this.CrearBtn.Location = new System.Drawing.Point(1324, 109);
-            this.CrearBtn.Margin = new System.Windows.Forms.Padding(6);
+            this.CrearBtn.Location = new System.Drawing.Point(713, 97);
             this.CrearBtn.Name = "CrearBtn";
-            this.CrearBtn.Size = new System.Drawing.Size(139, 49);
+            this.CrearBtn.Size = new System.Drawing.Size(75, 23);
             this.CrearBtn.TabIndex = 1;
             this.CrearBtn.Text = "Crear";
             this.CrearBtn.UseVisualStyleBackColor = true;
@@ -59,24 +57,24 @@
             // 
             // BorrarBtn
             // 
-            this.BorrarBtn.Location = new System.Drawing.Point(1165, 109);
+            this.BorrarBtn.Location = new System.Drawing.Point(627, 97);
+            this.BorrarBtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BorrarBtn.Name = "BorrarBtn";
-            this.BorrarBtn.Size = new System.Drawing.Size(150, 46);
+            this.BorrarBtn.Size = new System.Drawing.Size(81, 22);
             this.BorrarBtn.TabIndex = 2;
             this.BorrarBtn.Text = "Borrar";
             this.BorrarBtn.UseVisualStyleBackColor = true;
             this.BorrarBtn.Click += new System.EventHandler(this.BorrarBtn_Click);
             // 
-            // BaseIndexForm
+            // FrmBase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1509, 972);
+            this.ClientSize = new System.Drawing.Size(813, 456);
             this.Controls.Add(this.BorrarBtn);
             this.Controls.Add(this.CrearBtn);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "BaseIndexForm";
+            this.Name = "FrmBase";
             this.Text = "BaseIndexForm";
             this.Load += new System.EventHandler(this.BaseIndexForm_Load);
             this.Shown += new System.EventHandler(this.BaseIndexForm_Shown);

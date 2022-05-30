@@ -15,6 +15,28 @@ namespace RentCar_UI
 {
     public partial class FrmMenuModern : Form
     {
+        public FrmBase<TipoCombustible> FrmTipoCombustible;
+        private FrmBase<TipoVehiculo> FrmTipoVehiculo;
+        private FrmBase<MarcaVehiculo> FrmMarcaVehiculo;
+        private FrmBase<Vehiculo> FrmVehiculo;
+        private FrmBase<Cliente> FrmCliente;
+        private FrmLogin FrmLogin;
+
+        private Form _currentform;
+        public Form CurrentForm
+        {
+            get => _currentform;
+            set
+            {
+                if (_currentform is not null)
+                {
+                    _currentform.Hide();
+                }
+                _currentform = value;
+                _currentform.Show();
+            }
+        }
+    
         //Fields
         private int borderSize = 2;
         private Size formSize;
@@ -24,6 +46,19 @@ namespace RentCar_UI
         {
             InitializeComponent();
             CollapseMenu();
+            FrmTipoCombustible = new FrmBase<TipoCombustible>(apiUrl: "https://localhost:7163/api/TipoCombustibles", title: "Tipos de Combustible");
+            FrmTipoVehiculo = new FrmBase<TipoVehiculo>(apiUrl: "https://localhost:7163/api/TipoVehiculos", title: "Tipos de Vehiculos");
+            FrmMarcaVehiculo = new FrmBase<MarcaVehiculo>(apiUrl: "https://localhost:7163/api/MarcaVehiculos", title: "Marcas de Vehiculos");
+            FrmVehiculo = new FrmBase<Vehiculo>(apiUrl: "https://localhost:7163/api/Vehiculos", title: "Vehiculos");
+            FrmCliente = new FrmBase<Cliente>(apiUrl: "https://localhost:7163/api/Clientes", title: "Clientes");
+            FrmLogin = new FrmLogin();
+
+            MakeInlineForm(FrmLogin);
+            MakeInlineForm(FrmTipoCombustible);
+            MakeInlineForm(FrmTipoVehiculo);
+            MakeInlineForm(FrmMarcaVehiculo);
+            MakeInlineForm(FrmVehiculo);
+            MakeInlineForm(FrmCliente);
             this.Padding = new Padding(borderSize);//Border size
             this.BackColor = Color.FromArgb(98, 102, 244);//Border color
         }
@@ -171,7 +206,6 @@ namespace RentCar_UI
         {
             Application.Exit();
         }
-
         private void btnMaximize_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
@@ -200,32 +234,9 @@ namespace RentCar_UI
         {
 
         }
-
-        public FrmBase<TipoCombustible> FrmTipoCombustible;
-        private FrmBase<TipoVehiculo> FrmTipoVehiculo;
-        private FrmBase<MarcaVehiculo> FrmMarcaVehiculo;
-        private FrmBase<Vehiculo> FrmVehiculo;
-        private FrmBase<Cliente> FrmCliente;
-        private FrmLogin FrmLogin;
-
-        private Form _currentform;
-        public Form CurrentForm
-        {
-            get => _currentform;
-            set
-            {
-                if (_currentform is not null)
-                {
-                    _currentform.Hide();
-                }
-                _currentform = value;
-                _currentform.Show();
-            }
-        }
-
         private void tiposDeAutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            CurrentForm = FrmTipoVehiculo;
         }
 
         private void rjDropdownMenu2_Opening(object sender, CancelEventArgs e)
@@ -266,6 +277,37 @@ namespace RentCar_UI
         private void iconButton10_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void MakeInlineForm(Form f)
+        {
+            f.TopLevel = false;
+            Controls.Add(f);
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            f.Dock = DockStyle.Fill;
+        }
+        private void tiposDeCombustibleToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            CurrentForm = FrmTipoCombustible;
+        }
+        private void marcasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            CurrentForm = FrmMarcaVehiculo;
+        }
+
+        private void vehiculosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            CurrentForm = FrmVehiculo;
+        }
+
+        private void clientesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            CurrentForm = FrmCliente;
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            CurrentForm = FrmLogin;
         }
     }
 }

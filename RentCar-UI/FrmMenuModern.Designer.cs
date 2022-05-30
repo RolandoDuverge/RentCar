@@ -19,7 +19,9 @@
             }
             base.Dispose(disposing);
         }
+        #region Windows Form Designer generated code
 
+        #endregion
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -125,6 +127,7 @@
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // iconButton4
             // 
@@ -313,9 +316,9 @@
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(230, 60);
+            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(601, 558);
+            this.panelDesktop.Size = new System.Drawing.Size(831, 618);
             this.panelDesktop.TabIndex = 2;
             // 
             // rjDropdownMenu2
@@ -340,6 +343,7 @@
             this.tiposDeCombustibleToolStripMenuItem.Name = "tiposDeCombustibleToolStripMenuItem";
             this.tiposDeCombustibleToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.tiposDeCombustibleToolStripMenuItem.Text = "Tipos de combustible";
+            this.tiposDeCombustibleToolStripMenuItem.Click += new System.EventHandler(this.tiposDeCombustibleToolStripMenuItem_Click_1);
             // 
             // tiposDeAutToolStripMenuItem
             // 
@@ -355,6 +359,7 @@
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
             this.marcasToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.marcasToolStripMenuItem.Text = "Marcas";
+            this.marcasToolStripMenuItem.Click += new System.EventHandler(this.marcasToolStripMenuItem_Click_1);
             // 
             // modelosToolStripMenuItem
             // 
@@ -367,12 +372,14 @@
             this.vehiculosToolStripMenuItem.Name = "vehiculosToolStripMenuItem";
             this.vehiculosToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.vehiculosToolStripMenuItem.Text = "Vehiculos";
+            this.vehiculosToolStripMenuItem.Click += new System.EventHandler(this.vehiculosToolStripMenuItem_Click_1);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click_1);
             // 
             // empleadosToolStripMenuItem
             // 
@@ -409,9 +416,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 618);
-            this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelDesktop);
             this.Name = "FrmMenuModern";
             this.Text = "FrmMenuModern";
             this.Resize += new System.EventHandler(this.FrmMenuModern_Resize);
