@@ -262,5 +262,10 @@ namespace RentCar_UI
         {
             Open_DropdownMenu(rjDropdownMenu1, sender);
         }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
