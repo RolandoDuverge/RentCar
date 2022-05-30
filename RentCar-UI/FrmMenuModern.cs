@@ -1,9 +1,11 @@
 ﻿using System;
+using RentCar.Models;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using RJCodeAdvance.RJControls;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -197,6 +199,68 @@ namespace RentCar_UI
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public FrmBase<TipoCombustible> FrmTipoCombustible;
+        private FrmBase<TipoVehiculo> FrmTipoVehiculo;
+        private FrmBase<MarcaVehiculo> FrmMarcaVehiculo;
+        private FrmBase<Vehiculo> FrmVehiculo;
+        private FrmBase<Cliente> FrmCliente;
+        private FrmLogin FrmLogin;
+
+        private Form _currentform;
+        public Form CurrentForm
+        {
+            get => _currentform;
+            set
+            {
+                if (_currentform is not null)
+                {
+                    _currentform.Hide();
+                }
+                _currentform = value;
+                _currentform.Show();
+            }
+        }
+
+        private void tiposDeAutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjDropdownMenu2_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void Open_DropdownMenu (RJDropdownMenu dropdownMenu, object sender)
+        {
+            Control control = (Control)sender;
+            dropdownMenu.VisibleChanged += new EventHandler((sender2, ev)
+              => DropdownMenu_VisibleChanged(sender2, ev, control));
+            dropdownMenu.Show(control, control.Width, 0);
+        }
+        
+        private void DropdownMenu_VisibleChanged(object sender, EventArgs e, Control ctrl)
+        {
+            RJDropdownMenu dropdownMenu2 = (RJDropdownMenu)sender;
+            if (!DesignMode)
+            {
+                if (dropdownMenu2.Visible)
+                    ctrl.BackColor = Color.FromArgb(159, 161, 224);
+                else ctrl.BackColor = Color.FromArgb(98, 102, 244);
+            }
+        }
+            
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Open_DropdownMenu(rjDropdownMenu2, sender);
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            Open_DropdownMenu(rjDropdownMenu1, sender);
         }
     }
 }

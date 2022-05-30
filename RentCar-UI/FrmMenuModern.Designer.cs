@@ -28,18 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuModern));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMenu = new FontAwesome.Sharp.IconButton();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.btnClose = new FontAwesome.Sharp.IconButton();
@@ -47,21 +45,29 @@
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rjDropdownMenu2 = new RJCodeAdvance.RJControls.RJDropdownMenu(this.components);
+            this.tiposDeCombustibleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiposDeAutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modelosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vehiculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rjDropdownMenu1 = new RJCodeAdvance.RJControls.RJDropdownMenu(this.components);
+            this.rentarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inspeccionarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelTitleBar.SuspendLayout();
+            this.rjDropdownMenu2.SuspendLayout();
+            this.rjDropdownMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.panelMenu.Controls.Add(this.iconButton10);
-            this.panelMenu.Controls.Add(this.iconButton9);
-            this.panelMenu.Controls.Add(this.iconButton8);
-            this.panelMenu.Controls.Add(this.iconButton7);
-            this.panelMenu.Controls.Add(this.iconButton6);
             this.panelMenu.Controls.Add(this.iconButton5);
             this.panelMenu.Controls.Add(this.iconButton4);
             this.panelMenu.Controls.Add(this.iconButton3);
@@ -96,98 +102,6 @@
             this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton10.UseVisualStyleBackColor = true;
             // 
-            // iconButton9
-            // 
-            this.iconButton9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton9.FlatAppearance.BorderSize = 0;
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton9.ForeColor = System.Drawing.Color.White;
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButton9.IconColor = System.Drawing.Color.White;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 30;
-            this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.Location = new System.Drawing.Point(0, 431);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton9.Size = new System.Drawing.Size(230, 45);
-            this.iconButton9.TabIndex = 7;
-            this.iconButton9.Tag = "test";
-            this.iconButton9.Text = "    iconButton2";
-            this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton9.UseVisualStyleBackColor = true;
-            // 
-            // iconButton8
-            // 
-            this.iconButton8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton8.ForeColor = System.Drawing.Color.White;
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButton8.IconColor = System.Drawing.Color.White;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 30;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(0, 386);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton8.Size = new System.Drawing.Size(230, 45);
-            this.iconButton8.TabIndex = 6;
-            this.iconButton8.Tag = "test";
-            this.iconButton8.Text = "    iconButton2";
-            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton8.UseVisualStyleBackColor = true;
-            // 
-            // iconButton7
-            // 
-            this.iconButton7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton7.ForeColor = System.Drawing.Color.White;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButton7.IconColor = System.Drawing.Color.White;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 30;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(0, 341);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton7.Size = new System.Drawing.Size(230, 45);
-            this.iconButton7.TabIndex = 5;
-            this.iconButton7.Tag = "test";
-            this.iconButton7.Text = "    iconButton2";
-            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = true;
-            // 
-            // iconButton6
-            // 
-            this.iconButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconButton6.ForeColor = System.Drawing.Color.White;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButton6.IconColor = System.Drawing.Color.White;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 30;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(0, 296);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton6.Size = new System.Drawing.Size(230, 45);
-            this.iconButton6.TabIndex = 4;
-            this.iconButton6.Tag = "test";
-            this.iconButton6.Text = "    iconButton2";
-            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = true;
-            // 
             // iconButton5
             // 
             this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -205,7 +119,7 @@
             this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton5.Size = new System.Drawing.Size(230, 45);
             this.iconButton5.TabIndex = 3;
-            this.iconButton5.Tag = "test";
+            this.iconButton5.Tag = "Login";
             this.iconButton5.Text = "    iconButton2";
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -228,7 +142,7 @@
             this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton4.Size = new System.Drawing.Size(230, 45);
             this.iconButton4.TabIndex = 2;
-            this.iconButton4.Tag = "test";
+            this.iconButton4.Tag = "Help";
             this.iconButton4.Text = "    iconButton2";
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -251,11 +165,12 @@
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton3.Size = new System.Drawing.Size(230, 45);
             this.iconButton3.TabIndex = 1;
-            this.iconButton3.Tag = "test";
+            this.iconButton3.Tag = "Operations";
             this.iconButton3.Text = "    iconButton2";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton2
             // 
@@ -274,11 +189,12 @@
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton2.Size = new System.Drawing.Size(230, 45);
             this.iconButton2.TabIndex = 0;
-            this.iconButton2.Tag = "Vehiculos";
+            this.iconButton2.Tag = "Data";
             this.iconButton2.Text = "    iconButton2";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // panel1
             // 
@@ -289,6 +205,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 116);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(168, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnMenu
             // 
@@ -390,16 +317,91 @@
             this.panelDesktop.Size = new System.Drawing.Size(601, 558);
             this.panelDesktop.TabIndex = 2;
             // 
-            // pictureBox1
+            // rjDropdownMenu2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(168, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.rjDropdownMenu2.IsMainMenu = false;
+            this.rjDropdownMenu2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tiposDeCombustibleToolStripMenuItem,
+            this.tiposDeAutToolStripMenuItem,
+            this.marcasToolStripMenuItem,
+            this.vehiculosToolStripMenuItem,
+            this.clientesToolStripMenuItem,
+            this.empleadosToolStripMenuItem});
+            this.rjDropdownMenu2.MenuItemHeight = 50;
+            this.rjDropdownMenu2.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu2.Name = "rjDropdownMenu2";
+            this.rjDropdownMenu2.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(161)))), ((int)(((byte)(224)))));
+            this.rjDropdownMenu2.Size = new System.Drawing.Size(188, 136);
+            this.rjDropdownMenu2.Opening += new System.ComponentModel.CancelEventHandler(this.rjDropdownMenu2_Opening);
+            // 
+            // tiposDeCombustibleToolStripMenuItem
+            // 
+            this.tiposDeCombustibleToolStripMenuItem.Name = "tiposDeCombustibleToolStripMenuItem";
+            this.tiposDeCombustibleToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.tiposDeCombustibleToolStripMenuItem.Text = "Tipos de combustible";
+            // 
+            // tiposDeAutToolStripMenuItem
+            // 
+            this.tiposDeAutToolStripMenuItem.Name = "tiposDeAutToolStripMenuItem";
+            this.tiposDeAutToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.tiposDeAutToolStripMenuItem.Text = "Tipos de Autos";
+            this.tiposDeAutToolStripMenuItem.Click += new System.EventHandler(this.tiposDeAutToolStripMenuItem_Click);
+            // 
+            // marcasToolStripMenuItem
+            // 
+            this.marcasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modelosToolStripMenuItem});
+            this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.marcasToolStripMenuItem.Text = "Marcas";
+            // 
+            // modelosToolStripMenuItem
+            // 
+            this.modelosToolStripMenuItem.Name = "modelosToolStripMenuItem";
+            this.modelosToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.modelosToolStripMenuItem.Text = "Modelos";
+            // 
+            // vehiculosToolStripMenuItem
+            // 
+            this.vehiculosToolStripMenuItem.Name = "vehiculosToolStripMenuItem";
+            this.vehiculosToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.vehiculosToolStripMenuItem.Text = "Vehiculos";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            // 
+            // rjDropdownMenu1
+            // 
+            this.rjDropdownMenu1.IsMainMenu = false;
+            this.rjDropdownMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rentarToolStripMenuItem,
+            this.inspeccionarToolStripMenuItem});
+            this.rjDropdownMenu1.MenuItemHeight = 50;
+            this.rjDropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu1.Name = "rjDropdownMenu1";
+            this.rjDropdownMenu1.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(161)))), ((int)(((byte)(224)))));
+            this.rjDropdownMenu1.Size = new System.Drawing.Size(181, 70);
+            // 
+            // rentarToolStripMenuItem
+            // 
+            this.rentarToolStripMenuItem.Name = "rentarToolStripMenuItem";
+            this.rentarToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.rentarToolStripMenuItem.Text = "Rentar";
+            // 
+            // inspeccionarToolStripMenuItem
+            // 
+            this.inspeccionarToolStripMenuItem.Name = "inspeccionarToolStripMenuItem";
+            this.inspeccionarToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.inspeccionarToolStripMenuItem.Text = "Inspeccionar ";
             // 
             // FrmMenuModern
             // 
@@ -414,9 +416,11 @@
             this.Resize += new System.EventHandler(this.FrmMenuModern_Resize);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.rjDropdownMenu2.ResumeLayout(false);
+            this.rjDropdownMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -430,11 +434,6 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton btnMenu;
         private FontAwesome.Sharp.IconButton iconButton10;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton iconButton8;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton btnMinimize;
@@ -442,5 +441,17 @@
         private FontAwesome.Sharp.IconButton btnClose;
         private TextBox textBox1;
         private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private RJCodeAdvance.RJControls.RJDropdownMenu rjDropdownMenu2;
+        private ToolStripMenuItem tiposDeCombustibleToolStripMenuItem;
+        private ToolStripMenuItem tiposDeAutToolStripMenuItem;
+        private ToolStripMenuItem marcasToolStripMenuItem;
+        private ToolStripMenuItem vehiculosToolStripMenuItem;
+        private ToolStripMenuItem modelosToolStripMenuItem;
+        private ToolStripMenuItem clientesToolStripMenuItem;
+        private ToolStripMenuItem empleadosToolStripMenuItem;
+        private RJCodeAdvance.RJControls.RJDropdownMenu rjDropdownMenu1;
+        private ToolStripMenuItem rentarToolStripMenuItem;
+        private ToolStripMenuItem inspeccionarToolStripMenuItem;
     }
 }

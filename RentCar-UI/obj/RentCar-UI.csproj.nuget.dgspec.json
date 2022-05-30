@@ -59,6 +59,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "RJCodeAdvance.RJControls": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

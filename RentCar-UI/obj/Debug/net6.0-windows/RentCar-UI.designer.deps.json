@@ -1574,6 +1574,14 @@
           }
         }
       },
+      "RJCodeAdvance.RJControls/1.0.0": {
+        "runtime": {
+          "lib/net45/RJCodeAdvance.RJControls.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "runtimeTargets": {
           "runtimes/debian.8-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -3647,6 +3655,13 @@
       "sha512": "sha512-mCv/GzvMk5iatWoZY41PoIShEbwVxq9CDCc1fV/uqPFKZ4DD/1JuKZ5AL/FJJRsTanvMR3EOXKYCLdQ7PFYn8Q==",
       "path": "nuget.versioning/5.11.0",
       "hashPath": "nuget.versioning.5.11.0.nupkg.sha512"
+    },
+    "RJCodeAdvance.RJControls/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O+drkZ7lKfMdRRgXKiy2Z/ENhU5Ee2j2mXSzHWwEN2thtRDrWjoUpUvUm9gSFX8susKj1yeVmtMG3qYeNBvmBw==",
+      "path": "rjcodeadvance.rjcontrols/1.0.0",
+      "hashPath": "rjcodeadvance.rjcontrols.1.0.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

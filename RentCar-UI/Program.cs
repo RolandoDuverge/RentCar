@@ -15,7 +15,7 @@ namespace RentCar_UI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             FrmMenu = new FrmMenu();
-            Application.Run(new FrmLogin());
+            Application.Run(new FrmMenuModern());
         }
     }
 }

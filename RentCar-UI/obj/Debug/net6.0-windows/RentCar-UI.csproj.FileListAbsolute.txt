@@ -286,3 +286,4 @@ C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\bin\Debug\net6.0-windows\Font
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.FrmMenuModern.resources
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.Properties.Resources.resources
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\bin\Debug\net6.0-windows\MaterialSkin.dll
+C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\bin\Debug\net6.0-windows\RJCodeAdvance.RJControls.dll
