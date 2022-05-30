@@ -53,7 +53,8 @@ namespace RentCar_UI
                         dynamic j = JObject.Parse(s);
                         string token = j.token;
                         TokenLogin.Token = token;
-                        Program.FrmMenuModern.CurrentForm = Program.FrmMenuModern.FrmTipoCombustible;
+                        var f = new FrmMenuModern();
+                        f.ShowDialog();
                     }
                     else
                     {
