@@ -71,8 +71,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 456);
-            this.Controls.Add(this.BorrarBtn);
             this.Controls.Add(this.CrearBtn);
+            this.Controls.Add(this.BorrarBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmBase";
             this.Text = "BaseIndexForm";

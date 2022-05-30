@@ -51,17 +51,15 @@ namespace RentCar_UI
           dataGridView1.Rows.GetRowCount(DataGridViewElementStates.Selected);
             if (selectedRowCount > 0)
             {
-                System.Text.StringBuilder sb = new System.Text.StringBuilder();
-
                 for (int i = 0; i < selectedRowCount; i++)
                 {
-                    sb.Append("Row: ");
-                    sb.Append(dataGridView1.SelectedRows[i].Index.ToString());
-                    sb.Append(Environment.NewLine);
-                }
+                    var id = dataGridView1.SelectedRows[i].Cells[0].Value.ToString();
+                    var client = new HttpClient();
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + TokenLogin.Token);
+                    var response = client.DeleteAsync(ApiUrl + "/" + id);
 
-                sb.Append("Total: " + selectedRowCount.ToString());
-                MessageBox.Show(sb.ToString(), "Selected Rows");
+                }
+                MakeDataSet();
             }
 
         }
