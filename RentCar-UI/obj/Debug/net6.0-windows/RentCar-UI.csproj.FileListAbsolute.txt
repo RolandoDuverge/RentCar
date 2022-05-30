@@ -267,7 +267,6 @@ C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\bin\Debug\net6.0-windows\runt
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\bin\Debug\net6.0-windows\RentCar.dll
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\bin\Debug\net6.0-windows\RentCar.pdb
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar-UI.csproj.AssemblyReference.cache
-C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.Form1.resources
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar-UI.csproj.GenerateResource.cache
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar-UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar-UI.AssemblyInfoInputs.cache
@@ -279,3 +278,10 @@ C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\refi
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar-UI.pdb
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar-UI.genruntimeconfig.cache
 C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\ref\RentCar-UI.dll
+C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.FrmBase.resources
+C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.frmCreateCombustible.resources
+C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.FrmMenu.resources
+C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.FrmLogin.resources
+C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.FrmMenuModern.resources
+C:\Users\Rolando\Desktop\RentCarProyect\RentCar-UI\obj\Debug\net6.0-windows\RentCar_UI.Properties.Resources.resources

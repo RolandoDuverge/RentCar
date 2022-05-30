@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RentCar.Models;
+using RentCar.Entities;
 
 namespace RentCar.Data
 {
@@ -29,6 +30,6 @@ namespace RentCar.Data
         public DbSet<RentCar.Models.MarcaVehiculo>? MarcaVehiculo { get; set; }
 
         public DbSet<RentCar.Models.TipoVehiculo>? TipoVehiculo { get; set; }
-        public DbSet<RentCar.Entities.User>? Users { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

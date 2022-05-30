@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "RentCar-UI/1.0.0": {
         "dependencies": {
+          "FontAwesome.Sharp": "5.15.4",
           "Newtonsoft.Json": "13.0.1",
           "RentCar": "1.0.0"
         },
@@ -43,6 +44,14 @@
           "lib/net6.0/BCrypt.Net-Next.dll": {
             "assemblyVersion": "4.0.3.0",
             "fileVersion": "4.0.3.0"
+          }
+        }
+      },
+      "FontAwesome.Sharp/5.15.4": {
+        "runtime": {
+          "lib/net5.0-windows7.0/FontAwesome.Sharp.dll": {
+            "assemblyVersion": "5.15.4.0",
+            "fileVersion": "5.15.4.0"
           }
         }
       },
@@ -2457,6 +2466,13 @@
       "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
       "path": "bcrypt.net-next/4.0.3",
       "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
+    },
+    "FontAwesome.Sharp/5.15.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IqJe1IQas6tSVXMNHTWA/NJeP7azyxDTk6DCB+NMXOOED2F07IYI9nvfB1HP83r4yh5cntZoTdwSpIraA5XoXw==",
+      "path": "fontawesome.sharp/5.15.4",
+      "hashPath": "fontawesome.sharp.5.15.4.nupkg.sha512"
     },
     "Humanizer.Core/2.2.0": {
       "type": "package",

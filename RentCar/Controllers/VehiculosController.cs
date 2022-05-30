@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using RentCar.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RentCar.Data;
 using RentCar.Models;
 
-namespace RentCar.Controllers
-{
+namespace RentCar.Controllers;
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class VehiculosController : ControllerBase
@@ -121,4 +122,3 @@ namespace RentCar.Controllers
             return (_context.Vehiculo?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
-}

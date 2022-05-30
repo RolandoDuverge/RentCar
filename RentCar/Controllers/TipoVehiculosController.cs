@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RentCar.Data;
 using RentCar.Models;
+using RentCar.Authorization;
 
 namespace RentCar.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TipoVehiculosController : ControllerBase

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hSe5vjjW42MGYvJlL1ify7CH39cwpm0kVbcp9RJ4GADPWZKI9o5qasQYk4bavSlNqg686cRiwvru8c1A6i9Dzg==",
+  "dgSpecHash": "Ad9/QLE4EZf4W/gQXqQpBV3D/vIkzphCs7J58+LtesOe0Vf09Wh1DQFIgeCsgfYWGPa4ypFa9tUinYA6yhKVeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rolando\\Desktop\\RentCarProyect\\RentCar-UI\\RentCar-UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rolando\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Rolando\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Rolando\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\Rolando\\.nuget\\packages\\fontawesome.sharp\\5.15.4\\fontawesome.sharp.5.15.4.nupkg.sha512",
     "C:\\Users\\Rolando\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Rolando\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Rolando\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
