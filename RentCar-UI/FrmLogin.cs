@@ -54,7 +54,7 @@ namespace RentCar_UI
                         string token = j.token;
                         TokenLogin.Token = token;
                         var f = new FrmMenuModern();
-                        f.ShowDialog();
+                        f.Show();
                     }
                     else
                     {
